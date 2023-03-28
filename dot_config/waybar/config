@@ -75,8 +75,9 @@
     },
 
     "memory": {
-        "interval": 5,
-        "format": " {}%", // Icon: memory
+        "interval": 1,
+        //"format": " {}%", // Icon: memory
+        "format": " {used}", // Icon: memory
         "states": {
             "warning": 70,
             "critical": 90
@@ -141,6 +142,7 @@
     },
 
     "temperature": {
+      "hwmon-path": "/sys/class/hwmon/hwmon3/temp1_input", //comment if not working
       "critical-threshold": 90,
       "interval": 1,
       "format": "{icon} {temperatureC}°C",
