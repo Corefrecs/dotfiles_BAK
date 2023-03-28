@@ -158,7 +158,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 ## Display configuration
-output DP-3 {
+output "GIGA-BYTE TECHNOLOGY CO., LTD. M27Q 22390B004222" {
     resolution 2560x1440@170.001Hz
     pos 2560 0
     adaptive_sync enabled
@@ -166,7 +166,7 @@ output DP-3 {
     render_bit_depth 10
 }
 
-output DP-1 {
+output "LG Electronics LG Ultra HD 0x00009765" {
     scale 1.5
     scale_filter smart
     pos 0 0
