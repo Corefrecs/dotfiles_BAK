@@ -1,0 +1,51 @@
+    OpenRGB v0.8
+    Commit:  from 
+    Launched: 20230116_175338
+====================================================================================================
+
+103   |Info:    Found file: blue.orp attempting to validate header
+103   |Info:    Valid v3 profile found for blue
+1105  |Info:    ------------------------------------------------------
+1105  |Info:    |               Start device detection               |
+1105  |Info:    ------------------------------------------------------
+1105  |Info:    Initializing HID interfaces: Success
+1108  |Info:    ------------------------------------------------------
+1108  |Info:    |             Detecting I2C interfaces               |
+1108  |Info:    ------------------------------------------------------
+1108  |Info:    Registering I2C interface: /dev/i2c-3 Device 1002:73BF Subsystem: 1043:04F2
+1108  |Info:    Registering I2C interface: /dev/i2c-10 Device 1022:790B Subsystem: 1043:87C0
+1108  |Info:    Registering I2C interface: /dev/i2c-1 Device 1002:73BF Subsystem: 1043:04F2
+1108  |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+1108  |Info:    Registering I2C interface: /dev/i2c-8 Device 0000:0000 Subsystem: 0000:0000
+1108  |Info:    Registering I2C interface: /dev/i2c-6 Device 1002:73BF Subsystem: 1043:04F2
+1108  |Info:    Registering I2C interface: /dev/i2c-4 Device 1002:73BF Subsystem: 1043:04F2
+1108  |Info:    Registering I2C interface: /dev/i2c-11 Device 1022:790B Subsystem: 1043:87C0
+1109  |Info:    Registering I2C interface: /dev/i2c-2 Device 1002:73BF Subsystem: 1043:04F2
+1109  |Info:    Registering I2C interface: /dev/i2c-0 Device 0000:0000 Subsystem: 0000:0000
+1109  |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+1109  |Info:    Registering I2C interface: /dev/i2c-9 Device 0000:0000 Subsystem: 0000:0000
+1109  |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+1109  |Info:    Registering I2C interface: /dev/i2c-7 Device 0000:0000 Subsystem: 0000:0000
+1109  |Info:    Registering I2C interface: /dev/i2c-5 Device 1002:73BF Subsystem: 1043:04F2
+1109  |Info:    Registering I2C interface: /dev/i2c-12 Device 1022:790B Subsystem: 1043:87C0
+1109  |Info:    ------------------------------------------------------
+1109  |Info:    |               Detecting I2C devices                |
+1109  |Info:    ------------------------------------------------------
+2171  |Info:    ------------------------------------------------------
+2171  |Info:    |               Detecting I2C PCI devices            |
+2171  |Info:    ------------------------------------------------------
+2335  |Info:    ------------------------------------------------------
+2335  |Info:    |               Detecting HID devices                |
+2335  |Info:    ------------------------------------------------------
+2410  |Info:    [ASUS ROG STRIX B550-F GAMING (WI-FI)] Registering RGB controller
+2434  |Info:    [Razer Deathadder V2] Registering RGB controller
+2434  |Info:    ------------------------------------------------------
+2434  |Info:    |              Detecting other devices               |
+2434  |Info:    ------------------------------------------------------
+2457  |Info:    [Lian Li Uni Hub] Registering RGB controller
+2457  |Info:    ------------------------------------------------------
+2457  |Info:    |                Detection completed                 |
+2457  |Info:    ------------------------------------------------------
+2458  |Info:    Profile loading: Succeeded for ASUS ROG STRIX B550-F GAMING (WI-FI) @ HID: /dev/hidraw8
+2458  |Info:    Profile loading: Succeeded for Razer Deathadder V2 @ HID: /dev/hidraw0
+2458  |Info:    Profile loading: Succeeded for Lian Li Uni Hub @ USB: 7:1
