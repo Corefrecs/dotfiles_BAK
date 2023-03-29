@@ -217,4 +217,4 @@ mode "$Pause-break" {
 }
 bindsym $mod+shift+e         mode "$Pause-break"
 
-include /home/jp/.config/sway/config.d/*
+include ~/.config/sway/config.d/*
