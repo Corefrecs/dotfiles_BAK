@@ -1,6 +1,6 @@
 # dotfiles
 ## Pakages for Sway
-ttf-roboto-mono-nerd sway swaybg swayidle waybar autotiling-rs wofi foot dolphin kate firefox polkit-kde-agent mako chezmoi
+ttf-roboto-mono-nerd sway swaybg swayidle waybar autotiling-rs wofi foot dolphin kate firefox polkit-kde-agent mako chezmoi kvantum qt5ct breeze
 
 ## Environment variables, some are global, some are for sway
 MOZ_ENABLE_WAYLAND=1 firefox
