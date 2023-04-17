@@ -3,7 +3,7 @@
 ttf-roboto-mono-nerd sway swaybg swayidle waybar autotiling-rs wofi foot dolphin kate firefox polkit-kde-agent mako chezmoi kvantum qt5ct breeze
 
 ## Pakages for Hyprland
-hyprland kitty xorg-xwayland dolphin kate firefox wofi grim slurp pavucontrol mesa mako xdg-desktop-hyprland polkit-kde-agent qt5-wayland qt6-wayland qt5ct kvantum hyprpaper chezmoi 
+hyprland kitty xorg-xwayland dolphin kate firefox wofi grim slurp pavucontrol mesa mako xdg-desktop-hyprland polkit-kde-agent qt5-wayland qt6-wayland qt5ct kvantum hyprpaper chezmoi ttf-roboto-mono-nerd
 
 - AUR
 waybar-hyprland
@@ -12,6 +12,5 @@ waybar-hyprland
 MOZ_ENABLE_WAYLAND=1 firefox
 MANGOHUD=1
 ENABLE_VKBASALT=1
-OCIO="/home/jp/Documents/OCIO/AgX-12/config.ocio"
 QT_QPA_PLATFORMTHEME=qt5ct
 QT_QPA_PLATFORM=wayland
