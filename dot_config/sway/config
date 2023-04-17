@@ -204,13 +204,11 @@ bar swaybar_command waybar
 set $menu wofi --show=drun --lines=5 --prompt=""
 
 ## Shutdown
-set $wmexit 	swaymsg exit
-set $Pause-break  System  (s) shutdown, (r) reboot, (u) suspend, (e) exit
+set $Pause-break  System  (s) shutdown, (r) reboot, (u) suspend
 mode "$Pause-break" {
-    bindsym e       exec --no-startup-id $wmexit, 				mode "default"
-    bindsym u       exec --no-startup-id systemctl suspend, 	mode "default"
-    bindsym r       exec --no-startup-id systemctl reboot, 		mode "default"
-    bindsym s     exec --no-startup-id systemctl poweroff -i, mode "default"
+    bindsym u   exec --no-startup-id systemctl suspend,     mode "default"
+    bindsym r   exec --no-startup-id systemctl reboot,      mode "default"
+    bindsym s   exec --no-startup-id systemctl poweroff -i, mode "default"
 
     bindsym Return  mode "default"
     bindsym Escape  mode "default"

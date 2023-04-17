@@ -26,10 +26,11 @@
     ],
     "modules-right": [
         "network",
-        "bluetooth",
         "cpu",
         "temperature",
         "memory",
+        "bluetooth",
+        "idle_inhibitor",
         "tray",
         "clock"
     ],
