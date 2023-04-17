@@ -18,11 +18,11 @@
 
     "modules-left": [
         "sway/workspaces",
-        "sway/mode",
-        "custom/scratchpad",
+        "wlr/workspaces",
     ],
     "modules-center": [
         "sway/window",
+        "hyprland/window",
     ],
     "modules-right": [
         "network",
@@ -38,24 +38,6 @@
     // -------------------------------------------------------------------------
     // Modules
     // -------------------------------------------------------------------------
-
-    "battery": {
-        "interval": 60,
-        "states": {
-            "warning": 30,
-            "critical": 15
-        },
-        "format-charging": " {icon} {capacity}%", // Icon: bolt
-        "format": "{icon} {capacity}%",
-        "format-icons": [
-            "", // Icon: battery-empty
-            "", // Icon: battery-quarter
-            "", // Icon: battery-half
-            "", // Icon: battery-three-quarters
-            ""  // Icon: battery-full
-        ],
-        "tooltip": true
-    },
 
     "clock": {
         "interval": 60,
@@ -95,11 +77,12 @@
         "on-click": "swaymsg exec \\$term_float_portrait nmtui"
     },
 
-    "sway/mode": {
-        "format": " {}"
+    "sway/window": {
+        "format": "{}",
+        "max-length": 120
     },
 
-    "sway/window": {
+    "hyprland/window": {
         "format": "{}",
         "max-length": 120
     },
@@ -110,11 +93,10 @@
         "format": "{name}"
     },
 
-    "backlight": {
-        "format": "{icon} {percent}%",
-        "format-icons": ["", ""],
-        "on-scroll-down": "light -A 1",
-        "on-scroll-up": "light -U 1"
+    "wlr/workspaces": {
+        "all-outputs": false,
+        "disable-scroll": true,
+        "format": "{name}"
     },
 
     "idle_inhibitor": {
@@ -123,23 +105,6 @@
             "activated": "",
             "deactivated": ""
         }
-    },
-
-    "pulseaudio": {
-        //"scroll-step": 1,
-        "format": "{icon} {volume}%   {format_source}",
-        "format-bluetooth": "{icon} {volume}%",
-        "format-muted": "",
-        "format-icons": {
-            "headphones": "",
-            "handsfree": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": ["", ""]
-        },
-        "on-click": "swaymsg exec \\$pulseaudio"
     },
 
     "temperature": {
@@ -162,27 +127,6 @@
         "spacing": 5
     },
 
-    "custom/pacman": {
-        "format": " {}",
-        "interval": 3600,
-        "exec-if": "[ $(pamac checkupdates -q | wc -l) -gt 0 ]",
-        "exec": "pamac checkupdates -q | wc -l",
-        "on-click": "pamac-manager --updates; pkill -RTMIN+4 waybar",
-        "signal": 4
-    },
-
-    "custom/menu": {
-        "format": "",
-        "on-click": "swaymsg exec \\$app_menu",
-        "tooltip": false
-    },
-
-    "custom/help": {
-        "format": "ﲉ",
-        "on-click": "swaymsg exec \\$help",
-        "tooltip": false
-    },
-
     "bluetooth": {
         "format": "",
         "format-disabled": "",
@@ -191,17 +135,5 @@
         "on-click-right": "rfkill toggle bluetooth",
         "tooltip-format": "{}"
     },
-
-    "custom/scratchpad": {
-        "interval": 10,
-        "return-type": "json",
-        "format" : "{icon}",
-        "format-icons": {
-            "one": "",
-            "many": ""
-        },
-        "exec": "scratchpad.sh",
-        "on-click": "swaymsg 'scratchpad show'"
-    }
 }
 

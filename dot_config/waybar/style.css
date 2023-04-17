@@ -71,21 +71,13 @@
 }
 
 /* Each module */
-#custom-pacman,
-#custom-menu,
-#custom-help,
-#custom-scratchpad,
 #bluetooth,
-#battery,
 #clock,
 #cpu,
 #memory,
-#mode,
 #network,
-#pulseaudio,
 #temperature,
 #idle_inhibitor,
-#backlight,
 #tray {
     padding-left: 10px;
     padding-right: 10px;
@@ -95,34 +87,6 @@
 /* -----------------------------------------------------------------------------
  * Module styles
  * -------------------------------------------------------------------------- */
-
-#custom-scratchpad {
-    background-color: @accent_color;
-}
-
-#battery {
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-
-#battery.warning {
-    color: @warning_color;
-}
-
-#battery.critical {
-    color: @error_color;
-}
-
-#battery.warning.discharging {
-    animation-name: blink-warning;
-    animation-duration: 3s;
-}
-
-#battery.critical.discharging {
-    animation-name: blink-critical;
-    animation-duration: 2s;
-}
 
 #clock {
     font-weight: bold;
@@ -141,10 +105,6 @@
     color: @error_color;
 }
 
-#custom-menu {
-    background-color: @accent_color;
-}
-
 #memory {
     animation-timing-function: linear;
     animation-iteration-count: infinite;
@@ -161,24 +121,11 @@
     animation-duration: 2s;
 }
 
-#mode {
-    background: @background_color;
-}
-
 #network {
     /* No styles */
 }
 
 #network.disconnected {
-    color: @warning_color;
-}
-
-#pulseaudio {
-    /* No styles */
-}
-
-#pulseaudio.muted {
-    /* No styles */
     color: @warning_color;
 }
 
@@ -215,19 +162,17 @@
     background-color: @accent_color;
 }
 
+#workspaces button.active {
+    border-color: @accent_color;
+    color: @text_color;
+    background-color: @accent_color;
+}
+
 #workspaces button.urgent {
     border-color: @error_color;
     color: @error_color;
 }
 
-#custom-pacman {
-    color: @warning_color;
-}
-
 #bluetooth.disabled {
     color: @warning_color;
-}
-
-#custom-help {
-    padding-bottom: 2px;
 }
