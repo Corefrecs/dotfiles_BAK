@@ -1,10 +1,9 @@
 # dotfiles
 ## Pakages for Sway
-ttf-roboto-mono-nerd sway swaybg swayidle waybar autotiling-rs wofi foot dolphin kate firefox polkit-kde-agent mako chezmoi kvantum qt5ct breeze
+sudo pacman -S --needed ttf-roboto-mono-nerd sway swaybg swayidle waybar autotiling-rs wofi foot dolphin kate firefox polkit-kde-agent mako chezmoi kvantum qt5ct pavucontrol mesa
 
 ## Pakages for Hyprland
-hyprland kitty xorg-xwayland dolphin kate firefox wofi grim slurp pavucontrol mesa mako xdg-desktop-hyprland polkit-kde-agent qt5-wayland qt6-wayland qt5ct kvantum hyprpaper chezmoi ttf-roboto-mono-nerd
-
+sudo pacman -S --needed hyprland kitty xorg-xwayland dolphin kate firefox wofi grim slurp pavucontrol mesa mako xdg-desktop-hyprland polkit-kde-agent qt5-wayland qt6-wayland qt5ct kvantum hyprpaper chezmoi ttf-roboto-mono-nerd
 - AUR
 waybar-hyprland
 
