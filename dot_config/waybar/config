@@ -11,7 +11,7 @@
     // Global configuration
     // -------------------------------------------------------------------------
 
-    "layer": "bottom",
+    "layer": "top",
 
     // If height property would be not present, it'd be calculated dynamically
     "height": 30,
@@ -19,6 +19,7 @@
     "modules-left": [
         "sway/workspaces",
         "wlr/workspaces",
+        "hyprland/submap",
     ],
     "modules-center": [
         "sway/window",

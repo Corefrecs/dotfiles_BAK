@@ -9,12 +9,11 @@
 /* import css definitions for current theme */
 /*@import url("theme.css");*/
 
-@define-color transparent_background_color rgba(20, 26, 27, 0.9);
+@define-color transparent_background_color rgba(0, 0, 0, 0.5);
 @define-color background_color #141a1b;
 @define-color bright_text_color #ffffff;
 @define-color dim_text_color #d6d6d6;
 @define-color text_color #eeeeee;
-/*@define-color accent_color #16a085;*/
 @define-color accent_color #1f51ff;
 @define-color alternative_color #55b5db;
 @define-color warning_color #db7b55;
@@ -66,7 +65,7 @@
 
 /* The whole bar */
 #waybar {
-    background: @background_color;
+    background: rgba(0, 0, 0, 0.2);
     color: @text_color;
 }
 
@@ -90,7 +89,10 @@
 
 #clock {
     font-weight: bold;
-    background-color: @accent_color;
+    border-bottom: 4px;
+    border-color: @accent_color;
+    border-style: solid;
+    /*background-color: @accent_color;*/
 }
 
 #cpu {
@@ -144,16 +146,18 @@
 #window {
     font-weight: bold;
     margin-right: 25px;
-    color: @accent_color;
+    margin-left: 25px;
+    color: @text_color;
 }
 
 #workspaces button {
     border-top: 2px solid transparent;
+    border-bottom: 4px solid transparent;
     /* To compensate for the top border and still have vertical centering */
     padding-bottom: 2px;
     padding-left: 10px;
     padding-right: 10px;
-    color: @accent_color;
+    color: @text_color;
 }
 
 #workspaces button.focused {
@@ -163,9 +167,8 @@
 }
 
 #workspaces button.active {
-    border-color: @accent_color;
+    border-bottom: 4px solid @accent_color;
     color: @text_color;
-    background-color: @accent_color;
 }
 
 #workspaces button.urgent {
@@ -175,4 +178,8 @@
 
 #bluetooth.disabled {
     color: @warning_color;
+}
+
+#submap {
+    color: @error_color;
 }

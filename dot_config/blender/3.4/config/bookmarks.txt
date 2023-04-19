@@ -1,7 +1,0 @@
-[Bookmarks]
-/home/jp/Documents/Blender/
-[Recent]
-/home/jp/Pictures/textures/tapete/
-/home/jp/Pictures/textures/tapete/darktable_exported/
-/home/jp/Documents/Blender/test/
-/home/jp/Downloads/

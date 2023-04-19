@@ -1,2 +1,0 @@
-/home/jp/Documents/Blender/SD-Card/SD-Card.blend
-/home/jp/Documents/Blender/PBR-Shader.blend
