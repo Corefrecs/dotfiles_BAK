@@ -42,7 +42,7 @@
 
     "clock": {
         "interval": 60,
-        "format": " {:%e %b %Y %H:%M}", // Icon: calendar-alt
+        "format": "  {:%e %b %Y %H:%M}", // Icon: calendar-alt
         "tooltip": true,
         "tooltip-format": "<big>{:%B %Y}</big>\n<tt>{calendar}</tt>",
         "on-click": "swaymsg exec \\$calendar"
@@ -60,7 +60,7 @@
 
     "memory": {
         "interval": 1,
-        "format": " {used}", // Icon: memory
+        "format": "󰍛 {used}", // Icon: memory
         "states": {
             "warning": 70,
             "critical": 90
@@ -128,8 +128,8 @@
     },
 
     "bluetooth": {
-        "format": "",
-        "format-disabled": "",
+        "format": "",
+        "format-disabled": "󰂲",
         "interval": 30,
         "on-click": "blueman-manager",
         "on-click-right": "rfkill toggle bluetooth",
